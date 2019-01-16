@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="https://getbootstrap.com/docs/4.2/examples/floating-labels/floating-labels.css">
+{% endblock %}
+
+{% block main %}
+<div class="text-center">
+  <form id="displayNameForm" class="form-signin" action="/">
+
+  <h1 class="h3 mb-3 font-weight-normal">Set display name</h1>
+
+  <div class="form-label-group">
+    <input type="text" id="displayName" class="form-control" placeholder="Display Name" required autofocus>
+    <label for="displayName">Display Name</label>
+  </div>
+
+
+
+    <button class="btn btn-lg btn-primary btn-block " type="submit">Set</button>
+  </form>
+</div<
+{% endblock %}

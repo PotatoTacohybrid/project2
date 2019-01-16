@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<body class="text-center">
+  <form class="form-signin" action="/">
+    <h1 class="h3 mb-3 font-weight-normal">Set display name</h1>
+
+    <div class="row justify-content-center">
+      <label for="displayname" class="sr-only">Display Name</label>
+      <input type="email" id="displayname" class="form-control col-3" placeholder="Display Name" required autofocus>
+    </div>
+
+    <div class="row justify-content-center">
+      <button class="btn btn-lg btn-primary btn-block col-3" type="submit">Sign in</button>
+    </div>
+
+  </form>
+</body>
+{% endblock %}

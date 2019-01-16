@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+
+{% block main %}
+
+  
+  <form class="text-center">
+    <input id="newMessage" class="form-group">
+    <button id="newMessageSubmit" class="btn btn=primary" type="button">Comment</button>
+    <input type="hidden" id="roomName" value="{{ room }}">
+  </form>
+<div id="allMessages" class="container col-md-6">
+  
+  {% for user, message, time in content %}
+  <p class="text-left">[ {{ time }} ]     {{ user }}: {{ message }} </p>
+  {% endfor %}
+  
+<!-- 
+    <ul id="allMessages">
+    {% for user, message in content %}
+      <li>{{ user }} said {{ message }}</li>
+    {% endfor %}
+    </ul>
+-->
+</div>
+
+
+{% endblock %}
+
